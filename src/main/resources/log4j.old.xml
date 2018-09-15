@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+	<!-- LOG -->
+	<appender name="FILE_LOG" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="log/app.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="5000MB" />
+		<param name="MaxBackupIndex" value="2" />
+		<param name="Threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%p][%d{dd/MM/yyyy HH:mm:ss.SSS}][%c{1}] %m%n" />
+		</layout>
+	</appender>
+	<appender name="LOG" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="500" />
+		<appender-ref ref="FILE_LOG" />
+	</appender>
+
+	<!-- LOG -->
+	<category name="br.uff.mh.mestrado" additivity="false">
+		<priority value="DEBUG" />
+		<appender-ref ref="LOG" />
+		<!-- <appender-ref ref="console" /> -->
+	</category>
+
+</log4j:configuration>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+	<xs:element name="config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="maxCollectionSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="maxSubsetSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="maxCost" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="distribution" type="xs:double" minOccurs="1" maxOccurs="1" />
+				<xs:element name="alfa" type="xs:double" minOccurs="1" maxOccurs="1" />
+				<xs:element name="seed" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="greedySeed" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="greedyRandomLoops" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="localSearchRandomLoops" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="graspRandomLoops" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pathRelinkingCandidateListMaxSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="ls" type="lsList" minOccurs="1" maxOccurs="1" />
+				<xs:element name="genetic" type="genetic" minOccurs="1" maxOccurs="1" />
+				<xs:element name="graspTarget" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="graspTargetMaxTime" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="graspTargetLoops" type="xs:int" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyHCMC" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyHCMCR" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyHCMCRAlfa" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyHCTNV" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyLS" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyPRFor" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyPRBack" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyPRForAndBack" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyGRASP" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyGRASPTarget" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+				<xs:element name="strategyGenetic" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="genetic">
+		<xs:sequence>
+			<xs:element name="loop" type="xs:int" minOccurs="1" maxOccurs="1" />
+			<xs:element name="populationSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+			<xs:element name="classASize" type="xs:int" minOccurs="1" maxOccurs="1" />
+			<xs:element name="classBSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+			<xs:element name="classCSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="lsList">
+		<xs:sequence>
+			<xs:element name="item" type="lsItem" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+
+	<xs:complexType name="lsItem">
+		<xs:sequence>
+			<xs:element name="del" type="xs:int" minOccurs="1" maxOccurs="1" />
+			<xs:element name="add" type="xs:int" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+   

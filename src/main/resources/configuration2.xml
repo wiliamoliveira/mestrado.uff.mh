@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="configuration.xsd">
+  <maxCollectionSize>1000</maxCollectionSize>
+  <maxSubsetSize>10</maxSubsetSize>
+  <maxNumberItem>1000</maxNumberItem>
+  <seed>1</seed>
+  <loops>1</loops>
+  <strategySize>true</strategySize>
+  <strategyFrequency>true</strategyFrequency>
+  <strategySizeRandom>false</strategySizeRandom>
+  <strategyFrequencyRandom>true</strategyFrequencyRandom>
+</config>

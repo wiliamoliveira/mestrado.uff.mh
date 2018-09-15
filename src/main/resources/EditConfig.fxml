@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="503.0" prefWidth="665.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uff.mh.mestrado.gui.EditConfigController">
+   <children>
+      <TextArea fx:id="txtConfig" layoutX="14.0" layoutY="65.0" prefHeight="392.0" prefWidth="641.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="27.0" prefHeight="17.0" prefWidth="50.0" text="Config:" />
+      <TextField fx:id="txtConfigFilename" layoutX="70.0" layoutY="22.0" prefHeight="27.0" prefWidth="434.0" />
+      <Button fx:id="btnLoad" layoutX="594.0" layoutY="22.0" mnemonicParsing="false" onAction="#load" prefHeight="27.0" prefWidth="63.0" text="Load" />
+      <Button fx:id="btnSave" layoutX="518.0" layoutY="22.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="63.0" text="Save" />
+      <Button fx:id="btnClose" layoutX="594.0" layoutY="465.0" mnemonicParsing="false" onAction="#close" text="Close" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="configuration.xsd">
+	<maxCollectionSize>1000</maxCollectionSize>
+	<maxSubsetSize>1000</maxSubsetSize>
+	<maxCost>20</maxCost>
+	<distribution>0.01</distribution>
+	<alfa>0.85</alfa>
+	<seed>1</seed>
+	<greedySeed>1</greedySeed>
+	<greedyRandomLoops>100</greedyRandomLoops>
+	<localSearchRandomLoops>100</localSearchRandomLoops>
+	<graspRandomLoops>10</graspRandomLoops>
+	<pathRelinkingCandidateListMaxSize>5</pathRelinkingCandidateListMaxSize>
+	<ls>
+		<item>
+			<del>5</del>
+			<add>8</add>
+		</item>
+		<item>
+			<del>4</del>
+			<add>9</add>
+		</item>
+	</ls>
+	<genetic>
+		<loop>5</loop>
+		<populationSize>100</populationSize>
+		<classASize>25</classASize>
+		<classBSize>70</classBSize>
+		<classCSize>5</classCSize>
+	</genetic>
+	<graspTarget>790</graspTarget>
+	<graspTargetMaxTime>3600</graspTargetMaxTime>
+	<graspTargetLoops>300</graspTargetLoops>
+	<strategyHCMC>false</strategyHCMC>
+	<strategyHCMCR>false</strategyHCMCR>
+	<strategyHCMCRAlfa>true</strategyHCMCRAlfa>
+	<strategyHCTNV>false</strategyHCTNV>
+	<strategyLS>false</strategyLS>
+	<strategyPRFor>false</strategyPRFor>
+	<strategyPRBack>false</strategyPRBack>
+	<strategyPRForAndBack>false</strategyPRForAndBack>
+	<strategyGRASP>false</strategyGRASP>
+	<strategyGRASPTarget>false</strategyGRASPTarget>
+	<strategyGenetic>true</strategyGenetic>
+</config>
